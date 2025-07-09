@@ -38,7 +38,7 @@ const Footer = () => {
               <span>Jagdeep Singh</span>
             </a>
             <a
-              href="https://github.com/jagdep-singh/brillxme"
+              href="https://github.com/jagdep-singh/brillx"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-icon-link"
