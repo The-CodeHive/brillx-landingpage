@@ -65,7 +65,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section className="features floating-blobs noto" ref={sectionRef}>
+    <section className="features noto" ref={sectionRef}>
       <h1>What You Can Do with BrillX</h1>
       <div className="why-highlights">
         {featureItems.map((item, idx) => {

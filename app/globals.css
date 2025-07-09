@@ -1,7 +1,4 @@
 
-html, body {
-  overflow-x: hidden;
-}
 
 .petit {
   font-family: "Petit Formal Script", cursive;
@@ -45,7 +42,6 @@ body::selection {
  ================================================== */
 
 .hero-section {
-  padding: 2rem;
   text-align: center;
   height: 100vh;
   width: 100%;
@@ -61,22 +57,14 @@ body::selection {
   background-position: top center;
   background-repeat: no-repeat;
 }
-.hero-animation-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .hero-animation {
   pointer-events: none;
   z-index: 0;
   position: absolute;
   width: 600px;
   height: auto;
-  top: 25%;
+  top: 30%;
   left: 51%;
 }
 .hero-h1{
@@ -182,9 +170,9 @@ body::selection {
               features section
 ================================================== */
 .features {
-  padding: 4rem 2rem;
   text-align: center;
   width: 100%;
+  height: 100vh;
   background-color: #fefff7;
   display: flex;
   flex-direction: column;
@@ -259,7 +247,6 @@ ul.feature-list li:hover {
  ================================================== */
 .why-section {
   position: relative;
-  padding: 8rem 2rem;
   width: 100%;
   height: 100vh;
   background: var(--background);
@@ -289,7 +276,7 @@ ul.feature-list li:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 75vw;
   justify-content: center;
   z-index: 2;
 }
@@ -312,7 +299,7 @@ ul.feature-list li:hover {
 }
 
 .why-card:hover svg {
-  filter: drop-shadow(0 0 10px rgb(157, 255, 0));
+  filter: drop-shadow(0 0 10px rgb(5, 79, 0));
   transition: filter 0.3s ease;
 }
 .floating-blobs::before,
@@ -370,7 +357,7 @@ ul.feature-list li:hover {
   background-color: rgb(14, 2, 2);
   color: rgb(255, 254, 245);
   font-family: "Noto Serif Display", serif;
-  padding: 4rem 2rem;
+  padding-top: 8rem;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -548,68 +535,5 @@ ul.feature-list li:hover {
   .creator-links {
     flex-direction: row;
     gap: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-h1 {
-    font-size: 4rem;
-    margin: 1rem 0;
-  }
-
-  .hero-h2 {
-    font-size: 1.4rem;
-  }
-
-  .hero-p {
-    font-size: 0.95rem;
-    max-width: 90%;
-    text-align: justify;
-  }
-
-  .hero-animation {
-    width: 250px;
-    top: 20%;
-    left: 83%;
-    transform: translateX(-50%);
-  }
-
-  .features {
-    padding: 2rem 1rem;
-  }
-
-  .why-section {
-    padding: 3rem 1rem;
-    height: 150vh;
-  }
-
-  .footer {
-    padding: 3rem 1rem;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .hero-h1 {
-    font-size: 4rem;
-  }
-
-  .hero-h2 {
-    font-size: 2rem;
-  }
-
-  .hero-p {
-    font-size: 1.05rem;
-    max-width: 70%;
-  }
-  .why-section {
-    padding: 3rem 1rem;
-    height: auto;
-  }
-
-  .hero-animation {
-    width: 400px;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
