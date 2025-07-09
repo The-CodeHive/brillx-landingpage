@@ -537,3 +537,168 @@ ul.feature-list li:hover {
     gap: 1rem;
   }
 }
+
+
+@media (max-width: 1024px) {
+  /* Hero */
+  .hero-h1 {
+    font-size: 4rem;
+    margin: 1.5rem;
+  }
+
+  .hero-h2 {
+    font-size: 2rem;
+  }
+
+  .hero-p {
+    max-width: 80vw;
+    font-size: 0.95rem;
+  }
+
+  .hero-animation {
+    width: 400px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Features */
+  ul.feature-list li {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+  /* Hero */
+  .hero-h1 {
+    font-size: 5rem;
+  }
+
+  .hero-h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-p {
+    font-size: 0.9rem;
+  }
+
+  .hero-animation {
+    width: 300px;
+    top: 15%;
+  }
+
+  /* Features */
+  .features h1 {
+    font-size: 2rem;
+  }
+
+  ul.feature-list li {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  /* Why Section */
+  .why-section {
+    padding: 3rem 1.25rem;
+  }
+
+  .why-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .why-highlights {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .why-card {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+  .why-section{
+    padding: 0;
+    padding-bottom: 5rem;
+  }
+ .features,.why-section{
+  height: auto;
+  width: 100vw;
+ }
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .footer-left,
+  .footer-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-heading {
+    font-size: 1.3rem;
+  }
+
+  .footer .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .creator-links {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-h1 {
+    font-size: 4rem;
+    padding-top: 1rem;
+  }
+  .hero-animation{
+    top: 10% !important;
+  }
+  .hero-h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero-p {
+    font-size: 0.85rem;
+    padding: 0 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .why-section{
+    padding: 0;
+    padding-bottom: 5rem;
+  }
+ .features,.why-section{
+  height: auto;
+  width: 100vw;
+ }
+  .features h1,
+  .why-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+  }
+
+  .footer .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.25rem;
+  }
+}
